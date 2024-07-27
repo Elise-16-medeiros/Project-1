@@ -3,6 +3,8 @@ import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/_custom-components/navbar";
+import Footer from "@/components/_custom-components/footer";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -20,15 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-		<html lang="en" suppressHydrationWarning>
-			<body
-				className={cn(
-					"min-h-screen bg-background font-sans antialiased px-5 flex flex-col items-center justify-between",
-					fontSans.variable
-				)}
-			>
-				{children}
-			</body>
-		</html>
-	);
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "flex min-h-screen flex-col items-center justify-between bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
