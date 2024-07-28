@@ -5,6 +5,18 @@
   background-repeat: no-repeat;
   width: 152vh; 
   height: 100vh;
-  margin-top: -10rem;
-  
+  margin-top: -5rem;
+  index: -50;
+}
+
+@media (max-width: 768px) {
+  .backgroundImage {
+    background-position: top;
+  }
+}
+
+@media (max-width: 480px) {
+  .backgroundImage {
+    background-image: url('/heroMobile.png');
+  }
 }

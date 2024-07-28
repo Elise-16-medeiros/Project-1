@@ -22,7 +22,7 @@ const links: { title: string; href: string }[] = [
 
 export default function Navbar() {
   return (
-    <nav className="z-40 flex w-full items-center justify-between p-5">
+    <nav className="z-10 flex w-full items-center justify-between p-5">
       <>
         <h1 className="font-bold capitalize text-white">panto</h1>
       </>

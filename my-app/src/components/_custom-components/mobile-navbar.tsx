@@ -33,7 +33,7 @@ export default function MobileNavbar() {
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger>
-          <GripVertical />
+          <GripVertical className="text-white"/>
         </SheetTrigger>
         <SheetContent side={"top"}>
           <SheetHeader>
