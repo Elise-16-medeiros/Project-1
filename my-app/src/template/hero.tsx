@@ -1,12 +1,6 @@
+import style from '../app/background.module.css'
+
+
 export default function Hero() {
-    return (
-      <section
-        style={{
-          backgroundImage: `url(${yourImageUrl})`,
-          backgroundSize: "cover",
-        }}
-      >
-        Hero
-      </section>
-    );
+    return <section className={style.backgroundImage}>Hero</section>;
 }

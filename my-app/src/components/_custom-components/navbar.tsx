@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { ShoppingCart } from "lucide-react";
+import { CircleUser, ShoppingCart } from "lucide-react";
 import MobileNavbar from "./mobile-navbar";
 
 import {
@@ -22,9 +22,9 @@ const links: { title: string; href: string }[] = [
 
 export default function Navbar() {
   return (
-    <nav className="flex w-full items-center justify-between p-5">
+    <nav className="z-40 flex w-full items-center justify-between p-5">
       <>
-        <h1 className="font-bold capitalize">panto</h1>
+        <h1 className="font-bold capitalize text-white">panto</h1>
       </>
       <div className="hidden md:flex md:items-center md:justify-center md:gap-3">
         <NavigationMenu>
@@ -68,9 +68,10 @@ export default function Navbar() {
         </NavigationMenu>
       </div>
 
-      <div className="flex items-center gap-4 justify-center">
+      <div className="flex items-center justify-center gap-4">
         <MobileNavbar />
-        <ShoppingCart />
+        <ShoppingCart className="cursor-pointer text-white" />
+        <CircleUser className="cursor-pointer text-white" />
       </div>
     </nav>
   );
