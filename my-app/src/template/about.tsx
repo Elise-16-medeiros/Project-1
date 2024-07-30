@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import Heading from "@/components/_custom-components/heading";
 
 export default function About() {
   return (
     <section className="flex flex-col gap-y-8 md:flex-row md:gap-x-16">
       <div>
-        <h3 className="text-2xl font-bold">
-          Why <br /> Choosing Us
-        </h3>
+        <Heading description="Why <br/> Choosing Us" />
       </div>
 
       <div className="grid grid-cols-3 place-content-start place-items-start gap-x-4 md:gap-x-6">
