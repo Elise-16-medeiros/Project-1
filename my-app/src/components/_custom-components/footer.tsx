@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#F7F7F7] p-5">
       <div className="mb-8 grid grid-cols-1 grid-rows-4 place-content-center place-items-center gap-4 md:grid-cols-4">
-        <span>
+        <span className="ml-5">
           <h3 className="my-3 text-sm font-bold">Panto</h3>
           <p className="text-xs">
             The advantage of hiring a workspace with
@@ -38,7 +38,7 @@ export default function Footer() {
           </Link>
         </span>
         <span className="flex flex-col items-start gap-3">
-          <h3 className="my-2 text-sm font-bold text-[#F6973F]">Follow Us</h3>
+          <h3 className="my-2 text-sm font-bold text-[#F6973F] text-center">Follow Us</h3>
           <Link href={"/"} className="flex items-center gap-1 text-xs">
             <Facebook size={16} />
             Facebook
