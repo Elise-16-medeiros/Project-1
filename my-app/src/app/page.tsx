@@ -1,10 +1,15 @@
+import About from "@/template/about";
 import Hero from "@/template/hero";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-    </main>
-  )
+    <>
+      <header>
+        <Hero />
+      </header>
+      <main className="flex h-screen w-full flex-col items-center justify-start gap-y-5 p-5">
+        <About />
+      </main>
+    </>
+  );
 }
