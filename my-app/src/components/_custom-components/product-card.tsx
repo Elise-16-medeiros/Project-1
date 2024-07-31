@@ -1,13 +1,14 @@
 import Image from "next/image";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
 import { Plus } from "lucide-react";
-
+import { Button } from "../ui/button";
 
 type ProductsCardsProps = {
   title: string;
@@ -25,32 +26,33 @@ export default function ProductCard({
   price,
 }: ProductsCardsProps) {
   return (
-    <div className="flex flex-col gap-y-4 h-[250px]">
-      <div className="size-48 mb-12">
-        <Image
-          src={imageProduct}
-          alt="product image"
-          width={200}
-          height={200}
-        />
-      </div>
-      <Card className="h-[10rem]">
-        <CardHeader className="flex flex-col">
-          <CardTitle className="text-xs capitalize text-muted-foreground">
-            {title}
+    <div className="flex justify-center items-center">
+      <Card className="w-[250px]">
+        <CardHeader>
+          <CardTitle className="flex items-center justify-center">
+            <Image
+              src={imageProduct}
+              alt="product image"
+              width={100}
+              height={0}
+              className="object-cover"
+            />
           </CardTitle>
-          <CardDescription className="text-base font-bold capitalize text-[#0D1B39]">
-            {description}
-          </CardDescription>
-          <CardDescription>
-            <Image src={imageStars} alt="stars" width={80} height={80} />
+          <CardDescription className="text-xs capitalize">
+            chair
           </CardDescription>
         </CardHeader>
+        <CardContent>
+          <p className="text-base font-bold capitalize text-[#0D1B39]">
+            {description}
+          </p>
+          <Image src={imageStars} alt="stars" width={80} height={80} />
+        </CardContent>
         <CardFooter className="flex justify-between">
           <p className="font-bold text-[#0D1B39]">{price}</p>
-          <span className="flex h-6 w-6 cursor-pointer items-center justify-center rounded-full bg-[#0D1B39]">
-            <Plus size={16} className="cursor-pointer text-white" />
-          </span>
+          <Button variant={"custom"} size={"custom"} className="flex justify-center items-center">
+            <Plus size={16} />
+          </Button>
         </CardFooter>
       </Card>
     </div>

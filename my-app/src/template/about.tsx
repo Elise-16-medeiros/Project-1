@@ -4,7 +4,7 @@ import Heading from "@/components/_custom-components/heading";
 
 export default function About() {
   return (
-    <section className="flex flex-col gap-y-8 md:flex-row md:gap-x-16">
+    <section className="flex flex-col gap-y-8 md:flex-row md:gap-x-16 p-4">
       <div>
         <Heading description="Why <br/> Choosing Us" />
       </div>
