@@ -36,13 +36,13 @@ export default function Experiences() {
             interiors are made by people who are professionals in their fields
             with an elegant and lucurious style and with premium quality
             materials
-          </p>
           <Link
             href={"/"}
-            className="flex flex-row items-center gap-4 text-xs capitalize text-[#E58411]"
+            className="flex flex-row items-center gap-4 text-xs capitalize text-[#E58411] mt-4"
           >
             more info <MoveRight size={18} />
           </Link>
+          </p>
         </div>
       
     </section>

@@ -2,6 +2,7 @@ import ProductCard from "@/components/_custom-components/product-card";
 import About from "@/template/about";
 import Experiences from "@/template/experiences";
 import Hero from "@/template/hero";
+import Materials from "@/template/materials";
 import Products from "@/template/products";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Products />
         <Experiences />
+        <Materials />
        
       </main>
     </>
