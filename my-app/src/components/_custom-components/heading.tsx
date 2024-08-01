@@ -5,9 +5,10 @@ type HeadingProps = {
 
 export default function Heading({description, title}: HeadingProps) {
     return (
-      <div>
-        <p className="uppercase text-[#E58411] text-base">{title}</p>
-        <h2 className="text-2xl font-bold text-start" dangerouslySetInnerHTML={{ __html: description }}></h2>
+      <div className="flex flex-col justify-start items-start gap-y-4">
+        <p className="uppercase text-[#E58411] text-sm font-semibold">{title}</p>
+        <h2 className="text-3xl font-bold text-start capitalize text-wrap">{description}</h2>
       </div>
     );
 }
+

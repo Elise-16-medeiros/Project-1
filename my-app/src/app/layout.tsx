@@ -7,8 +7,8 @@ import Navbar from "@/components/_custom-components/navbar";
 import Footer from "@/components/_custom-components/footer";
 
 const fontSans = FontSans({
-	subsets: ["latin"],
-	variable: "--font-sans",
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-         <Footer /> 
+      <Footer /> 
       </body>
     </html>
   );

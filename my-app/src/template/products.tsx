@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Products() {
   return (
-    <section className="flex h-screen w-full flex-col items-center justify-center gap-y-5 py-4 bg-[#F7F7F7]">
+    <section className="flex h-[85vh] w-full flex-col items-center justify-center gap-y-6 my-3 bg-[#F7F7F7]">
       <Heading description="Best Selling Product" />
       <Tabs
         defaultValue="chair"
-        className="flex w-[400px] flex-col items-center justify-center"
+        className="flex w-[400px] flex-col items-center justify-center gap-y-6"
       >
         <TabsList className="grid w-full grid-cols-3 place-content-center gap-x-6 rounded-full bg-[#EEEEEE] px-3 py-4">
           <TabsTrigger value="chair" className="rounded-full">
